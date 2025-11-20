@@ -17,61 +17,63 @@
     </script>
 </head>
 <body>
-    <div class="flex relative">
-        <div class="absolute top-[627px] w-full z-50">
+    <div class="flex flex-col md:flex-row relative">
+        <!-- 帯 -->
+        <div class="absolute top-[393px] md:top-[610px] w-full z-50">
             <div class="relative">
-                <div class="opacity-70 bg-gradient-to-r from-[#FFFAE69E] to-transparent"><img src="./src/images/band.webp" alt="" class="w-full"></div>
-                <p class="absolute -top-16 left-6 w-44 h-44 flex justify-center items-center rounded-full bg-white text-center text-[#B39B10] text-2xl">衛生検査の<br/>プロ集団</p>
-                <p class="absolute top-14 left-[30%] text-end">
+                <div class="opacity-70 bg-gradient-to-r from-[#FFFAE69E] to-transparent"><img src="./src/images/band.webp" alt="" class="w-full h-40 md:h-auto"></div>
+                <p class="absolute -top-16 left-2 md:left-6 w-32 md:w-44 h-32 md:h-44 flex justify-center items-center rounded-full bg-white text-center text-[#B39B10] text-xl md:text-2xl">衛生検査の<br/>プロ集団</p>
+                <p class="absolute top-5 md:top-14 left-auto md:left-[30%] right-5 md:right-auto text-start md:text-end">
                     だれかの「困った」に<br/>
                     真っ先に手を差し伸べる
                 </p>
-                <div class="absolute right-[40%] top-8 flex gap-4">
-                    <svg width="10" height="88" viewBox="0 0 10 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="absolute left-5 md:left-auto right-auto md:right-[40%] top-20 md:top-8 flex gap-4">
+                    <svg class="w-auto h-12 md:h-20" width="10" height="88" viewBox="0 0 10 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 0V85.5" stroke="black" stroke-width="2"/>
                         <path d="M1 82.5L5 86.5L9 82.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <p class="[writing-mode:vertical-rl] toppan-ebold">下に<br/>スクロール</p>
+                    <p class="md:[writing-mode:vertical-rl] toppan-ebold">下に<br/>スクロール</p>
                 </div>
                 <img src="./src/images/logo.svg" alt="" class="w-40 absolute bottom-5 right-6 ">
             </div>
         </div>
-        <div class="w-1/2">
-            <div class="bg fixed pr-8">
+        <!-- 左側 -->
+        <div class="w-full md:w-1/2">
+            <div class="bg static md:fixed pr-0 md:pr-8">
                 <div class="relative">
-                    <div class="flex gap-10">
-                        <div class="flex flex-col [writing-mode:vertical-rl] text-white toppan-bold gap-3 tracking-widest pt-12 pl-12">
-                            <p class="text-base bg-sahara-500 p-1 h-max">一緒に会社を</p>
-                            <p class="text-base bg-sahara-500 p-1 h-max">作り上げていく</p>
+                    <div class="flex gap-3 md:gap-10 pt-3 md:pt-12">
+                        <div class="flex flex-col [writing-mode:vertical-rl] text-white toppan-bold gap-1 md:gap-3 tracking-widest pl-3 md:pl-12">
+                            <p class="text-sm md:text-base bg-sahara-500 p-1 h-max">一緒に会社を</p>
+                            <p class="text-sm md:text-base bg-sahara-500 p-1 h-max">作り上げていく</p>
                         </div>
-                        <p class="text-[155px] toppan-bold tracking-widest">挑戦者</p>
+                        <p class="text-8xl md:text-[155px] toppan-bold tracking-normal md:tracking-widest shrink-0">挑戦者</p>
                     </div>
-                    <div class="absolute flex top-56 -right-5">
-                        <p class="text-[155px] toppan-bold [writing-mode:vertical-rl] tracking-widest">募集</p>
+                    <div class="absolute flex top-28 md:top-56 right-0 md:right-5">
+                        <p class="text-8xl md:text-[155px] toppan-bold [writing-mode:vertical-rl] tracking-widest">募集</p>
                     </div>
-                    <div class="flex items-end -mt-5">
-                        <img src="./src/images/per1.webp" alt="" class="w-52 h-auto">
-                        <img src="./src/images/per2.webp" alt="" class="w-32 h-auto">
-                        <img src="./src/images/per3.webp" alt="" class="w-36 h-auto ml-6">
+                    <div class="relative flex items-end mt-0 md:-mt-5">
+                        <img src="./src/images/per1.webp" alt="" class="w-[136px] md:w-52 h-auto">
+                        <img src="./src/images/per2.webp" alt="" class="w-[86px]  md:w-32 h-auto">
+                        <img src="./src/images/per3.webp" alt="" class="w-24 md:w-36 h-auto ml-1 md:ml-6">
                     </div>
                 </div>
-                <div id="entry" class="px-12 pt-6 opacity-0 transition-opacity duration-500">
-                    <div class="relative bg-[#F6F5C9] rounded-2xl w-full py-6 text-sahara-500 flex justify-center items-center gap-5 hover:translate-x-1 hover:translate-y-1 transition-all duration-300">
-                        <p class="futura text-4xl">Entry</p>
-                        <p class="text-sm">エントリーはこちら</p>
+                <div id="entry" class="px-4 md:px-12 pt-10 opacity-0 transition-opacity duration-500 pb-6 md:pb-0">
+                    <div class="relative bg-[#F6F5C9] rounded-2xl w-full py-6 text-sahara-500 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-5 hover:translate-x-1 hover:translate-y-1 transition-all duration-300">
+                        <p class="futura text-2xl md:text-4xl">Entry</p>
+                        <p class="text-xs md:text-sm">エントリーはこちら</p>
                         <div class="absolute top-1/2 -translate-y-1/2 right-4 w-14 h-14 bg-white rounded-full flex justify-center items-center">
                             <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 5L22 5" stroke="#B9A429" stroke-width="2"/>
                                 <path d="M19 9L23 5L19 1" stroke="#B9A429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <img src="./src/images/entry.svg" alt="" class="w-36 absolute top-5 -left-5">
+                        <img src="./src/images/entry.svg" alt="" class="w-28 md:w-36 absolute top-5 -left-5">
                     </div>
                 </div>
                 <script>
                     const box = document.getElementById('entry');
-
                     window.addEventListener('scroll', () => {
+                        
                         const scrollY = window.scrollY;
                         if (scrollY > 200) {
                         box.classList.add('opacity-100');
@@ -83,27 +85,30 @@
                     });
                 </script>
             </div>
-            <div class="fixed top-0 left-1/2 -translate-x-1/2 w-16  h-full bg-white flex flex-col items-center pt-8 z-40">
-                <p class="toppan-ebold [writing-mode:vertical-rl] text-xl tracking-widest">株式会社みらい 採用サイト</p>
-                <hr class="border-[1.5px] border-black w-12 my-11">
-                <p class="dnp-bold [writing-mode:vertical-rl] text-sm">Mirai Inc. Recruitment site</p>
+            
+            <!-- 中央 -->
+            <div class="static md:fixed top-0 md:left-1/2 md:-translate-x-1/2 w-full md:w-16 h-16 md:h-full bg-white flex flex-row md:flex-col justify-center md:justify-start items-center md:pt-8 z-40">
+                <p class="toppan-ebold md:[writing-mode:vertical-rl] text-lg md:text-xl tracking-widest">株式会社みらい <br class="block md:hidden"/>採用サイト</p>
+                <div class="border-l-[1.5px] md:border-l-0 border-t-0 md:border-t-[1.5px] border-black w-1 md:w-12 h-12 md:h-1 my-0 md:my-11 mx-5 md:mx-0"></div>
+                <p class="dnp-bold md:[writing-mode:vertical-rl] text-sm">Mirai Inc. <br class="block md:hidden"/>Recruitment site</p>
             </div>
         </div>
-        <div class="relative bg ml-1/2 w-1/2 overflow-y-auto pl-8">
-            <div class="px-12 pt-10">
+        <!-- 右側 -->
+        <div class="relative bg ml-0 md:ml-1/2 w-full md:w-1/2 overflow-y-auto pl-0 md:pl-8">
+            <div class="px-4 md:px-12 pt-10">
                 <p class="text-xs leading-loose max-w-[450px]">株式会社みらいは「見えないモノを見えるようにする」ことと「楽しかった思い出を楽しかったで終わらせる」を食品衛生を通じて世の中に提供している会社です。私達の商品は、私達そのものです。考え方、真面目さ、信頼度、困っているお客様がいたら出来るだけ力になりたいと思う気持ち、仲間が困っていたらもちろん助けるよねとか、みらいらしさというものを大事にしています。</p>
             </div>
-            <div class="flex items-end pt-10 pl-11 mb-44">
-                <img src="./src/images/per4.svg" alt="" class="w-44 h-auto">
-                <img src="./src/images/per5.webp" alt="" class="w-40 h-auto ml-9">
-                <img src="./src/images/per6.webp" alt="" class="w-44 h-auto ml-9">
+            <div class="flex items-end pt-8 pl-4 md:pl-11 md:mb-44">
+                <img src="./src/images/per4.svg" alt="" class="w-28 md:w-44 h-auto">
+                <img src="./src/images/per5.webp" alt="" class="w-24 md:w-40 h-auto ml-3 md:ml-9">
+                <img src="./src/images/per6.webp" alt="" class="w-28 md:w-44 h-auto ml-3 md:ml-9">
             </div>
-            <div class="pt-14 px-12 text-sm leading-loose">
+            <div class="mt-6 md:pt-14 px-4 md:px-12 text-xs md:text-sm !leading-loose">
                 <p class="">
                     人生において
                     <span class="relative">
                         <span class="relative z-50">「働く時間」</span>
-                        <svg class="absolute left-0 top-1 z-40" width="77" height="35" viewBox="0 0 77 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="absolute left-0 top-0 md:top-1 z-40" width="77" height="35" viewBox="0 0 77 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g clip-path="url(#clip0_0_913)">
                             <rect x="3.9657" width="73.6257" height="22.1259" transform="rotate(10.3251 3.9657 0)" fill="url(#pattern0_0_913)"/>
                             </g>
@@ -125,23 +130,23 @@
                 <p class="pt-6">たとえば――</p>
                 <p>
                     <span class="bg-sahara-500 text-white p-[0.5px]">
-                        あなたの日々の仕事が積み重なり、相手から「ありがとう」と感謝される瞬間。
+                        あなたの日々の仕事が積み重なり、<br class="block md:hidden"/>相手から「ありがとう」と感謝される瞬間。
                     </span><br/>
                     <span class="bg-sahara-500 text-white p-[0.5px]">
-                        あなたの工夫や気づきによって、お客様から「本当に助かった！」と言われる場面
+                        あなたの工夫や気づきによって、<br class="block md:hidden"/>お客様から「本当に助かった！」と言われる場面
                     </span><br/>
                     <span class="bg-sahara-500 text-white p-[0.5px]">
-                        社長や上司との距離が近く、何かあれば｢すぐに相談できる」関係性
+                        社長や上司との距離が近く、<br class="block md:hidden"/>何かあれば｢すぐに相談できる」関係性
                     </span><br/>
                     <span class="bg-sahara-500 text-white p-[0.5px]">
-                        成長中の会社だからこそ、あなたの｢小さな改善｣が職場全体の力になる環境
+                        成長中の会社だからこそ、<br class="block md:hidden"/>あなたの｢小さな改善｣が職場全体の力になる環境
                     </span>
                 </p>
                 <p class="pt-8">もし、そんな仕事や職場を求めているなら、<br/>ぜひ私たちと一緒に働くことを真剣に考えてみてください。</p>
                 <p class="pt-6">
                     <span class="relative">
                         <span class="relative z-50">「あってよかった、みらい。」</span>
-                        <svg class="absolute left-4 top-0 z-40" width="155" height="41" viewBox="0 0 155 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="absolute left-0 md:left-4 top-0 z-40" width="155" height="41" viewBox="0 0 155 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g clip-path="url(#clip0_0_917)">
                             <rect x="2.66687" width="152.498" height="24.475" transform="rotate(6.25555 2.66687 0)" fill="url(#pattern0_0_917)"/>
                             </g>
@@ -173,7 +178,7 @@
                     に真っ先に手を差し伸べる会社です。飲食店や学校給食、ホテルや保育園など、
                     <span class="relative">
                         <span class="relative z-50">「食」</span>
-                        <svg class="absolute -left-1 -top-2 z-40" width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="absolute -left-1 -top-3 md:-top-2 z-40" width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect x="9.66953" width="36.7279" height="39.9686" transform="rotate(14.0004 9.66953 0)" fill="url(#pattern0_0_926)"/>
                             <defs>
                             <pattern id="pattern0_0_926" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -187,10 +192,10 @@
                 </p>
                 <p class="pt-8">
                     想像してみてください。<br/>
-                    <span class="bg-sahara-500 text-white p-1">
-                        楽しみにしていた誕生日ケーキで食中毒が起きてしまったら？
+                    <span class="bg-sahara-500 text-white p-[0.5px]">
+                        楽しみにしていた誕生日ケーキで<br class="block md:hidden"/>食中毒が起きてしまったら？
                     </span><br/>
-                    <span class="bg-sahara-500 text-white p-1">
+                    <span class="bg-sahara-500 text-white p-[0.5px]">
                         お祭りで食べた焼きそばに異物が入っていたら？
                     </span>
                 </p>
@@ -199,7 +204,7 @@
                     私たちは、そんな
                     <span class="relative">
                         <span class="relative z-50">“もしも”</span>
-                        <svg class="absolute top-1 -left-3 z-40" width="77" height="35" viewBox="0 0 77 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="absolute top-1 -left-4 md:-left-3 z-40" width="77" height="35" viewBox="0 0 77 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g clip-path="url(#clip0_0_929)">
                             <rect x="3.9657" width="73.6257" height="22.1259" transform="rotate(10.3251 3.9657 0)" fill="url(#pattern0_0_929)"/>
                             </g>
@@ -220,41 +225,41 @@
                     誰かのピンチに真っ先に駆けつける――<br/>
                     地味だけど、とても感謝される仕事に一緒に取り組みませんか？
                 </p>
-                <p class="mt-14 w-max text-sahara-500 text-base border-2 rounded-full px-3 py-1 border-sahara-500 bg-[#FFF1A3]">数字で紹介</p>
-                <p class="pt-6 text-3xl">一緒に働く仲間・会社の状況について</p>
+                <p class="mt-14 w-max text-sahara-500 text-xs md:text-base border-2 rounded-full px-3 py-1 border-sahara-500 bg-[#FFF1A3]">数字で紹介</p>
+                <p class="pt-3 md:pt-6 text-xl md:text-3xl">一緒に働く仲間・会社の状況について</p>
                 <div class="pt-6">
-                    <div class="flex justify-center gap-5">
-                        <div class="relative bg-white rounded-lg w-[267px] h-[232px] px-4 py-2">
+                    <div class="flex flex-col md:flex-row justify-center gap-5">
+                        <div class="relative bg-white rounded-lg w-full md:w-[267px] h-[232px] px-4 py-2">
                             <p class="text-xl text-[#8A8A8A]">年代</p>
                             <div class="relative flex justify-center pt-5">
-                                <svg width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="w-36 h-auto" width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M94.3679 140.694C110.688 135.375 124.574 124.408 133.529 109.764C142.484 95.1208 145.92 77.7625 143.22 60.8116C140.519 43.8608 131.859 28.4298 118.797 17.2941C105.734 6.15853 89.1273 0.0491091 71.9627 0.064784L72.0285 72.1539L94.3679 140.694Z" fill="#FFE554"/>
                                     <path d="M13.8306 29.7569C4.86411 42.0599 0.022627 56.8857 8.09158e-05 72.1094C-0.0224725 87.3331 4.77506 102.173 13.7051 114.503C22.6351 126.832 35.2392 136.018 49.7108 140.744C64.1825 145.47 79.7787 145.493 94.2643 140.81L72.0891 72.2162L13.8306 29.7569Z" fill="#DCDF80"/>
                                     <path d="M71.9331 -3.11953e-05C60.5567 0.0198244 49.3465 2.73185 39.2191 7.91432C29.0916 13.0968 20.3345 20.6025 13.6637 29.8179L72.0589 72.089L71.9331 -3.11953e-05Z" fill="#F4FBD9"/>
                                 </svg>
-                                <p class="absolute -top-1 left-11 text-xs leading-3">50代以上<br/><span class="futura text-5xl text-sahara-500">15</span>%</p>
-                                <p class="absolute left-6 bottom-3 text-xs leading-3">40代<br/><span class="futura text-5xl text-sahara-500">40</span>%</p>
+                                <p class="absolute -top-1 left-12 md:left-11 text-xs leading-3">50代以上<br/><span class="futura text-5xl text-sahara-500">15</span>%</p>
+                                <p class="absolute left-12 md:left-6 bottom-3 text-xs leading-3">40代<br/><span class="futura text-5xl text-sahara-500">40</span>%</p>
                                 <p class="absolute top-10 right-7 text-xs leading-3">20代・30代<br/><span class="futura text-5xl text-sahara-500">45</span>%</p>
                             </div>
                             <img src="./src/images/number1.svg" alt="" class="w-11 h-auto absolute -left-5 bottom-10">
                             <img src="./src/images/number2.svg" alt="" class="w-10 h-auto absolute -top-1 -right-2">
                         </div>
-                        <div class="relative bg-white rounded-lg w-[267px] h-[232px] px-4 py-2 ">
+                        <div class="relative bg-white rounded-lg w-full md:w-[267px] h-[232px] px-4 py-2">
                             <p class="text-xl text-[#8A8A8A]">男女比</p>
                             <div class="relative flex justify-center pt-5">
                                 <svg width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.01212 95.6213C8.35197 108.188 16.0824 119.31 26.3488 127.757C36.6151 136.204 49.0175 141.648 62.1846 143.486C75.3517 145.324 88.7708 143.485 100.958 138.173C113.145 132.861 123.626 124.281 131.242 113.384C138.858 102.486 143.311 89.6952 144.111 76.4244C144.91 63.1536 142.025 49.9202 135.772 38.1872C129.52 26.4543 120.145 16.6789 108.684 9.94167C97.2221 3.2045 84.1209 -0.231984 70.8283 0.0121794L72.1523 72.0892L4.01212 95.6213Z" fill="#FFE554"/>
                                     <path d="M70.9316 0.0713647C59.5567 0.254028 48.3864 3.12621 38.3342 8.45308C28.282 13.78 19.6332 21.4103 13.0949 30.7202C6.55668 40.0301 2.31463 50.7552 0.715612 62.0187C-0.883408 73.2822 0.206007 84.7642 3.89478 95.526L72.0891 72.1512L70.9316 0.0713647Z" fill="#DCDF80"/>
                                 </svg>
-                                <p class="absolute top-6 left-5 text-xs leading-3">男性<br/><span class="futura text-5xl text-sahara-500">30</span>%</p>
-                                <p class="absolute right-10 bottom-6 text-xs leading-3">女性<br/><span class="futura text-5xl text-sahara-500">70</span>%</p>
+                                <p class="absolute top-6 left-16 md:left-5 text-xs leading-3">男性<br/><span class="futura text-5xl text-sahara-500">30</span>%</p>
+                                <p class="absolute right-16 md:right-10 bottom-6 text-xs leading-3">女性<br/><span class="futura text-5xl text-sahara-500">70</span>%</p>
                             </div>
                             <img src="./src/images/number3.svg" alt="" class="w-12 h-auto absolute -top-3 right-1">
-                            <img src="./src/images/number4.svg" alt="" class="w-9 h-auto absolute -right-5 bottom-0">
+                            <img src="./src/images/number4.svg" alt="" class="w-9 h-auto absolute -right-3 md:-right-5 bottom-0">
                         </div>
                     </div>
-                    <div class="pt-4 flex justify-center gap-5">
-                        <div class="relative bg-white rounded-lg w-[267px] h-[232px] px-4 py-2">
+                    <div class="pt-4 flex flex-col md:flex-row justify-center gap-5">
+                        <div class="relative bg-white rounded-lg w-full md:w-[267px] h-[232px] px-4 py-2">
                             <p class="text-xl text-[#8A8A8A]">未経験からの入社比率</p>
                             <div class="relative flex justify-center pt-5">
                                 <svg width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -265,10 +270,10 @@
                             </div>
                             <img src="./src/images/number5.svg" alt="" class="w-16 h-auto absolute left-6 bottom-1">
                         </div>
-                        <div class="relative bg-white rounded-lg w-[267px] h-[232px] px-4 py-2">
+                        <div class="relative bg-white rounded-lg w-full md:w-[267px] h-[232px] px-4 py-2">
                             <p class="text-xl text-[#8A8A8A]">新規お取引開始</p>
                             <div class="relative flex justify-end pt-10">
-                                <p class="text-xs leading-3">毎年約<span class="futura text-5xl text-sahara-500">300</span>社</p>
+                                <p class="text-xs leading-3 pr-10 md:pr-0">毎年約<span class="futura text-5xl text-sahara-500">300</span>社</p>
                             </div>
                             <img src="./src/images/number6.svg" alt="" class="w-16 h-auto absolute left-6 bottom-6">
                             <img src="./src/images/number7.svg" alt="" class="w-28 h-auto absolute right-1 -bottom-4">
@@ -281,10 +286,10 @@
                     そうなった時からそうなっていくのです。知識や経験、資格も大事ですが、モチベーションが一番大事です。モチベーションがちゃんとあればある程度の事は身につきます。
                 </p>
                 <p class="pt-6">
-                    2014年設立のベンチャー企業だからこそ、経験よりも
+                    2014年設立のベンチャー企業だからこそ、<br class="block md:hidden"/>経験よりも
                     <span class="relative">
                         <span class="relative z-50">「楽しさ」や「ワクワク」</span>
-                        <svg class="absolute top-1 left-1 z-40" width="155" height="41" viewBox="0 0 155 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="absolute -top-1 md:top-1 left-0 md:left-1 z-40" width="155" height="41" viewBox="0 0 155 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g clip-path="url(#clip0_0_2319)">
                             <rect x="2.66687" width="152.498" height="24.475" transform="rotate(6.25555 2.66687 0)" fill="url(#pattern0_0_2319)"/>
                             </g>
@@ -302,13 +307,13 @@
                     といった好奇心や協調性を大切にしています。最近では「部門間ゲーム大会」といったイベントを社員有志で企画するなど、仲間同士で“楽しい・ワクワク”を共有できる場も広がっています。
                 </p>
                 <div class="pt-14 pb-20">
-                    <p class="w-max text-sahara-500 text-base border-2 rounded-full px-3 py-1 border-sahara-500 bg-[#FFF1A3]">各職種の特徴</p>
-                    <p class="pt-6 text-3xl">当社における4つの職種</p>
+                    <p class="w-max text-sahara-500 text-xs md:text-base border-2 rounded-full px-3 py-1 border-sahara-500 bg-[#FFF1A3]">各職種の特徴</p>
+                    <p class="pt-3 md:pt-6 text-xl md:text-3xl">当社における4つの職種</p>
                     <p class="pt-6">タイミングによって募集職種は限定されますが、将来的にジョブローテーションで幅広い経験もすることも可能です。</p>
-                    <div class="pt-28 relative">
-                        <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 bottom-0"></div>
+                    <div class="mt-28 relative">
+                        <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 -top-5 md:top-auto bottom-auto md:bottom-0"></div>
                         <p class="text-center text-sahara-500 text-3xl relative">営業</p>
-                        <div class="relative w-full h-60 rounded-lg bg-white px-9 pt-6">
+                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-9 py-6">
                             <p class="text-lg text-center">日本全国のお客様先を訪問し、サービスをご案内。</p>
                             <div class="flex justify-between pt-5">
                                 <div class="w-3/5 text-xs text-[#959595] space-y-3">
@@ -346,10 +351,10 @@
                             <img src="./src/images/works1.svg" alt="" class="w-24 absolute -right-7 -bottom-9">
                         </div>
                     </div>
-                    <div class="pt-28 relative">
-                        <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 bottom-0"></div>
+                    <div class="mt-28 relative">
+                        <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 -top-5 md:top-auto bottom-auto md:bottom-0"></div>
                         <p class="text-center text-sahara-500 text-3xl relative">検査員</p>
-                        <div class="relative w-full h-60 rounded-lg bg-white px-9 pt-6">
+                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-9 py-6">
                             <p class="text-lg text-center">白衣を着て顕微鏡や検査機器を使い、検体検査を担当。</p>
                             <div class="flex justify-between pt-5">
                                 <div class="w-3/5 text-xs text-[#959595] space-y-3">
@@ -384,7 +389,7 @@
                     <div class="pt-28 relative">
                         <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 bottom-0"></div>
                         <p class="text-center text-sahara-500 text-3xl relative">衛生点検員</p>
-                        <div class="relative w-full h-60 rounded-lg bg-white px-9 pt-6">
+                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-9 py-6">
                             <p class="text-lg text-center">飲食店などのお客様先で衛生に関する検査・指導を実施。</p>
                             <div class="flex justify-between pt-5">
                                 <div class="w-3/5 text-xs text-[#959595] space-y-3">
@@ -419,7 +424,7 @@
                     <div class="pt-28 relative">
                         <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 bottom-0"></div>
                         <p class="text-center text-sahara-500 text-3xl relative">社内管理・事務</p>
-                        <div class="relative w-full h-60 rounded-lg bg-white px-9 pt-6">
+                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-9 py-6">
                             <p class="text-lg text-center">経理・人事などの管理業務、検査員の事務サポートを担当。</p>
                             <div class="flex justify-between pt-5">
                                 <div class="w-3/5 text-xs text-[#959595] space-y-3">
