@@ -18,9 +18,9 @@
 </head>
 <body class="relative h-screen">
     <!-- 帯 -->
-    <div class="hidden md:block absolute bottom-0 w-full z-50">
+    <div class="hidden lg:block absolute bottom-32 xl:bottom-0 w-full z-50">
         <div class="relative">
-            <div class="opacity-70 bg-gradient-to-r from-[#FFFAE69E] to-transparent"><img src="./src/images/band.webp" alt="" class="w-full h-auto"></div>
+            <div class="opacity-70 bg-gradient-to-r from-[#FFFAE69E] to-transparent"><img src="./src/images/band.webp" alt="" class="w-full h-40 xl:h-auto"></div>
             <p class="absolute -top-16 left-6 w-44 h-44 flex justify-center items-center rounded-full bg-white text-center text-[#B39B10] text-xl md:text-2xl">衛生検査の<br/>プロ集団</p>
             <p class="absolute top-14 left-1/3 text-end">
                 だれかの「困った」に<br/>
@@ -31,18 +31,18 @@
                     <path d="M5 0V85.5" stroke="black" stroke-width="2"/>
                     <path d="M1 82.5L5 86.5L9 82.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <p class="md:[writing-mode:vertical-rl] toppan-b font-black">下に<br/>スクロール</p>
+                <p class="[writing-mode:vertical-rl] toppan-b font-black">下に<br/>スクロール</p>
             </div>
             <img src="./src/images/logo.svg" alt="" class="w-40 absolute bottom-5 right-6 ">
         </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 relative">
+    <div class="grid grid-cols-1 lg:grid-cols-2 relative">
         <!-- 左側 -->
-        <div class="mr-0 md:mr-8">
-            <div class="bg w-full md:w-1/2 relative md:fixed">
-                <div class="absolute top-10 right-0 md:right-14">
-                    <div class="flex gap-3 md:gap-10">
-                        <div class="flex flex-col [writing-mode:vertical-rl] text-white toppan font-bold gap-1 md:gap-3 tracking-widest pl-3 md:pl-12">
+        <div class="mr-0 lg:mr-8">
+            <div class="bg w-full lg:w-1/2 relative lg:fixed">
+                <div class="absolute top-10 right-0 lg:right-14">
+                    <div class="flex gap-3 xl:gap-10">
+                        <div class="flex flex-col [writing-mode:vertical-rl] text-white toppan font-bold gap-1 md:gap-3 tracking-widest pl-3 xl:pl-12">
                             <p class="text-sm md:text-base bg-sahara-500 p-1 h-max">一緒に会社を</p>
                             <p class="text-sm md:text-base bg-sahara-500 p-1 h-max">作り上げていく</p>
                         </div>
@@ -52,10 +52,10 @@
                 <div class="relative flex items-end pt-40 md:pt-52">
                     <img src="./src/images/persons1.svg" alt="" class="w-4/5 h-auto">
                 </div>
-                <div class="block md:hidden -mt-5">
+                <div class="block lg:hidden -mt-5">
                     <div class="relative">
                         <div class="opacity-70 bg-gradient-to-r from-[#FFFAE69E] to-transparent"><img src="./src/images/band.webp" alt="" class="w-full h-32"></div>
-                        <p class="absolute -top-16 left-3 w-28 h-28 flex justify-center items-center rounded-full bg-white text-center text-[#B39B10] text-lg md:text-2xl">衛生検査の<br/>プロ集団</p>
+                        <p class="absolute -top-16 left-3 w-28 h-28 flex justify-center items-center rounded-full bg-white text-center text-[#B39B10] text-lg xl:text-2xl">衛生検査の<br/>プロ集団</p>
                         <p class="absolute top-3 right-5 text-end">
                             だれかの「困った」に<br/>
                             真っ先に手を差し伸べる
@@ -70,19 +70,29 @@
                         <img src="./src/images/logo.svg" alt="" class="w-40 absolute bottom-5 right-6 ">
                     </div>
                 </div>
-                <div id="entry" class="hidden md:block px-4 md:px-12 pt-3 opacity-0 transition-opacity duration-500 pb-6 md:pb-0">
-                    <div class="relative bg-[#F6F5C9] rounded-2xl w-full py-6 text-sahara-500 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-5 hover:translate-x-1 hover:translate-y-1 transition-all duration-300">
-                        <p class="futura text-2xl md:text-4xl">Entry</p>
-                        <p class="text-xs md:text-sm">エントリーはこちら</p>
+                <div id="entry" class="fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] max-w-[400px] xl:max-w-[500px] z-50 lg:bottom-4 lg:left-10 xl:left-20 lg:translate-x-0 duration-500 transition-all opacity-0">
+                    <button class="lg:hidden bg-[#F6F5C9] rounded-2xl w-full py-6 text-sahara-500 flex flex-col justify-center items-center gap-2 relative">
+                        <p class="futura text-2xl">Entry</p>
+                        <p class="text-xs">エントリーはこちら</p>
+
                         <div class="absolute top-1/2 -translate-y-1/2 right-4 w-14 h-14 bg-white rounded-full flex justify-center items-center">
-                            <svg width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 5L22 5" stroke="#B9A429" stroke-width="2"/>
-                                <path d="M19 9L23 5L19 1" stroke="#B9A429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            →
                         </div>
                         <img src="./src/images/entry.svg" alt="" class="w-28 md:w-36 absolute top-5 -left-5">
-                    </div>
+                    </button>
+
+                    <!-- PC -->
+                    <button class="hidden lg:flex bg-[#F6F5C9] rounded-2xl w-full py-6 text-sahara-500 justify-center items-center gap-3 relative hover:translate-x-1 hover:translate-y-1 transition-all duration-300">
+                        <p class="futura text-3xl">Entry</p>
+                        <p class="text-sm">エントリーはこちら</p>
+
+                        <div class="absolute top-1/2 -translate-y-1/2 right-4 w-14 h-14 bg-white rounded-full flex justify-center items-center">
+                            →
+                        </div>
+                        <img src="./src/images/entry.svg" alt="" class="w-28 md:w-36 absolute top-5 -left-5">
+                    </button>
                 </div>
+
                 <script>
                     const box = document.getElementById('entry');
                     window.addEventListener('scroll', () => {
@@ -100,26 +110,26 @@
             </div>
             
             <!-- 中央 -->
-            <div class="static md:fixed top-0 md:left-1/2 md:-translate-x-1/2 w-full md:w-16 h-16 md:h-full bg-white flex flex-row md:flex-col justify-center md:justify-start items-center md:pt-8 z-40">
-                <p class="toppan-b font-black md:[writing-mode:vertical-rl] text-lg md:text-xl tracking-widest">株式会社みらい <br class="block md:hidden"/>採用サイト</p>
-                <div class="border-l-[1.5px] md:border-l-0 border-t-0 md:border-t-[1.5px] border-black w-1 md:w-12 h-12 md:h-1 my-0 md:my-11 mx-5 md:mx-0"></div>
-                <p class="dnp font-bold md:[writing-mode:vertical-rl] text-sm">Mirai Inc. <br class="block md:hidden"/>Recruitment site</p>
+            <div class="static lg:fixed top-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-16 h-16 lg:h-full bg-white flex flex-row lg:flex-col justify-center lg:justify-start items-center lg:pt-8 z-40">
+                <p class="toppan-b font-black lg:[writing-mode:vertical-rl] text-lg md:text-xl tracking-widest">株式会社みらい <br class="block md:hidden"/>採用サイト</p>
+                <div class="border-l-[1.5px] lg:border-l-0 border-t-0 lg:border-t-[1.5px] border-black w-1 lg:w-12 h-12 lg:h-1 my-0 lg:my-11 mx-5 lg:mx-0"></div>
+                <p class="dnp font-bold lg:[writing-mode:vertical-rl] text-sm">Mirai Inc. <br class="block md:hidden"/>Recruitment site</p>
             </div>
         </div>
         <!-- 右側 -->
-        <div class="relative bg w-full overflow-y-auto pl-0 md:pl-8 overflow-hidden">
-            <div class="px-4 md:px-12 pt-10">
+        <div class="relative bg w-full overflow-y-auto pl-0 lg:pl-8 overflow-hidden">
+            <div class="px-4 xl:px-12 pt-10">
                 <p class="text-xs leading-loose max-w-[450px]">株式会社みらいは「見えないモノを見えるようにする」ことと「楽しかった思い出を楽しかったで終わらせる」を食品衛生を通じて世の中に提供している会社です。私達の商品は、私達そのものです。考え方、真面目さ、信頼度、困っているお客様がいたら出来るだけ力になりたいと思う気持ち、仲間が困っていたらもちろん助けるよねとか、みらいらしさというものを大事にしています。</p>
             </div>
             <div class="flex items-end pt-12 md:mb-20">
                 <img src="./src/images/persons2.svg" alt="" class="w-11/12 mx-auto h-auto">
             </div>
-            <div class="pt-7 md:pt-14 px-4 md:px-12 text-xs md:text-sm !leading-loose">
+            <div class="pt-7 md:pt-14 px-4 xl:px-12 text-xs md:text-sm !leading-loose">
                 <p class="">
                     人生において
                     <span class="relative">
-                        <span class="relative z-50">「働く時間」</span>
-                        <svg class="absolute left-0 top-0 md:top-1 z-40" width="77" height="35" viewBox="0 0 77 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <span class="relative z-40">「働く時間」</span>
+                        <svg class="absolute left-0 top-0 md:top-1 z-30" width="77" height="35" viewBox="0 0 77 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g clip-path="url(#clip0_0_913)">
                             <rect x="3.9657" width="73.6257" height="22.1259" transform="rotate(10.3251 3.9657 0)" fill="url(#pattern0_0_913)"/>
                             </g>
@@ -156,8 +166,8 @@
                 <p class="pt-8">もし、そんな仕事や職場を求めているなら、<br/>ぜひ私たちと一緒に働くことを真剣に考えてみてください。</p>
                 <p class="pt-6">
                     <span class="relative">
-                        <span class="relative z-50">「あってよかった、みらい。」</span>
-                        <svg class="absolute left-0 md:left-4 top-0 z-40" width="155" height="41" viewBox="0 0 155 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <span class="relative z-40">「あってよかった、みらい。」</span>
+                        <svg class="absolute left-0 md:left-4 top-0 z-30" width="155" height="41" viewBox="0 0 155 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g clip-path="url(#clip0_0_917)">
                             <rect x="2.66687" width="152.498" height="24.475" transform="rotate(6.25555 2.66687 0)" fill="url(#pattern0_0_917)"/>
                             </g>
@@ -175,8 +185,8 @@
                     ―<br/>
                     株式会社みらいは、だれかの
                     <span class="relative">
-                        <span class="relative z-50">“困った”</span>
-                        <svg class="absolute -top-1 left-1 z-40" width="45" height="27" viewBox="0 0 45 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <span class="relative z-40">“困った”</span>
+                        <svg class="absolute -top-1 left-1 z-30" width="45" height="27" viewBox="0 0 45 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect width="187.106" height="33.1727" transform="matrix(-0.220583 0.0335641 -0.108909 -0.620855 44.8853 20.5955)" fill="url(#pattern0_0_923)"/>
                             <defs>
                             <pattern id="pattern0_0_923" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -188,8 +198,8 @@
                     </span>
                     に真っ先に手を差し伸べる会社です。飲食店や学校給食、ホテルや保育園など、
                     <span class="relative">
-                        <span class="relative z-50">「食」</span>
-                        <svg class="absolute -left-1 -top-3 md:-top-2 z-40" width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <span class="relative z-40">「食」</span>
+                        <svg class="absolute -left-1 -top-3 md:-top-2 z-30" width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <rect x="9.66953" width="36.7279" height="39.9686" transform="rotate(14.0004 9.66953 0)" fill="url(#pattern0_0_926)"/>
                             <defs>
                             <pattern id="pattern0_0_926" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -214,8 +224,8 @@
                     せっかくの楽しい思い出が、辛い記憶に変わってしまいますよね。 <br/>
                     私たちは、そんな
                     <span class="relative">
-                        <span class="relative z-50">“もしも”</span>
-                        <svg class="absolute top-1 -left-4 md:-left-3 z-40" width="77" height="35" viewBox="0 0 77 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <span class="relative z-40">“もしも”</span>
+                        <svg class="absolute top-1 -left-4 md:-left-3 z-30" width="77" height="35" viewBox="0 0 77 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g clip-path="url(#clip0_0_929)">
                             <rect x="3.9657" width="73.6257" height="22.1259" transform="rotate(10.3251 3.9657 0)" fill="url(#pattern0_0_929)"/>
                             </g>
@@ -238,9 +248,9 @@
                 </p>
                 <p class="mt-14 w-max text-sahara-500 text-xs md:text-base border-2 rounded-full px-3 py-1 border-sahara-500 bg-[#FFF1A3]">数字で紹介</p>
                 <p class="pt-3 md:pt-6 text-xl md:text-3xl">一緒に働く仲間・会社の状況について</p>
-                <div class="pt-6 px-4 md:px-0">
-                    <div class="flex flex-col md:flex-row justify-center gap-5">
-                        <div class="relative bg-white rounded-lg w-full md:w-[267px] h-[232px] px-4 py-2">
+                <div class="pt-6 px-4 md:px-20 xl:px-0">
+                    <div class="flex flex-col md:flex-row lg:flex-col xl:flex-row justify-center gap-5">
+                        <div class="relative bg-white rounded-lg w-full xl:w-[267px] h-[232px] px-4 py-2">
                             <p class="text-xl text-[#8A8A8A]">年代</p>
                             <div class="relative flex justify-center pt-5">
                                 <svg class="w-36 h-auto" width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +265,7 @@
                             <img src="./src/images/number1.svg" alt="" class="w-11 h-auto absolute -left-5 bottom-10">
                             <img src="./src/images/number2.svg" alt="" class="w-10 h-auto absolute -top-1 -right-2">
                         </div>
-                        <div class="relative bg-white rounded-lg w-full md:w-[267px] h-[232px] px-4 py-2">
+                        <div class="relative bg-white rounded-lg w-full xl:w-[267px] h-[232px] px-4 py-2">
                             <p class="text-xl text-[#8A8A8A]">男女比</p>
                             <div class="relative flex justify-center pt-5">
                                 <svg width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -269,8 +279,8 @@
                             <img src="./src/images/number4.svg" alt="" class="w-9 h-auto absolute -right-3 md:-right-5 bottom-0">
                         </div>
                     </div>
-                    <div class="pt-4 flex flex-col md:flex-row justify-center gap-5">
-                        <div class="relative bg-white rounded-lg w-full md:w-[267px] h-[232px] px-4 py-2">
+                    <div class="pt-4 flex flex-col md:flex-row lg:flex-col xl:flex-row justify-center gap-5">
+                        <div class="relative bg-white rounded-lg w-full xl:w-[267px] h-[232px] px-4 py-2">
                             <p class="text-xl text-[#8A8A8A]">未経験からの入社比率</p>
                             <div class="relative flex justify-center pt-5">
                                 <svg width="145" height="145" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -279,9 +289,9 @@
                                 </svg>
                                 <p class="absolute bottom-5 right-16 md:right-10 text-xs leading-3"><span class="futura text-5xl text-sahara-500">90</span>%</p>
                             </div>
-                            <img src="./src/images/number5.svg" alt="" class="w-16 h-auto absolute left-2 md:left-6 bottom-1">
+                            <img src="./src/images/number5.svg" alt="" class="w-16 h-auto absolute left-2 xl:left-6 bottom-1">
                         </div>
-                        <div class="relative bg-white rounded-lg w-full md:w-[267px] h-[232px] px-4 py-2">
+                        <div class="relative bg-white rounded-lg w-full xl:w-[267px] h-[232px] px-4 py-2">
                             <p class="text-xl text-[#8A8A8A]">新規お取引開始</p>
                             <div class="relative flex justify-end pt-10">
                                 <p class="text-xs leading-3 pr-10 md:pr-0">毎年約<span class="futura text-5xl text-sahara-500">300</span>社</p>
@@ -297,10 +307,10 @@
                     そうなった時からそうなっていくのです。知識や経験、資格も大事ですが、モチベーションが一番大事です。モチベーションがちゃんとあればある程度の事は身につきます。
                 </p>
                 <p class="pt-6">
-                    2014年設立のベンチャー企業だからこそ、<br class="block md:hidden"/>経験よりも
+                    2014年設立のベンチャー企業だからこそ、<br class="block xl:hidden"/>経験よりも
                     <span class="relative">
-                        <span class="relative z-50">「楽しさ」や「ワクワク」</span>
-                        <svg class="absolute top-0 md:top-1 left-0 md:left-1 z-40" width="155" height="41" viewBox="0 0 155 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <span class="relative z-40">「楽しさ」や「ワクワク」</span>
+                        <svg class="absolute top-0 md:top-1 left-0 md:left-1 z-30" width="155" height="41" viewBox="0 0 155 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g clip-path="url(#clip0_0_2319)">
                             <rect x="2.66687" width="152.498" height="24.475" transform="rotate(6.25555 2.66687 0)" fill="url(#pattern0_0_2319)"/>
                             </g>
@@ -321,11 +331,11 @@
                     <p class="w-max text-sahara-500 text-xs md:text-base border-2 rounded-full px-3 py-1 border-sahara-500 bg-[#FFF1A3]">各職種の特徴</p>
                     <p class="pt-3 md:pt-6 text-xl md:text-3xl">当社における4つの職種</p>
                     <p class="pt-6">タイミングによって募集職種は限定されますが、将来的にジョブローテーションで幅広い経験もすることも可能です。</p>
-                    <div class="mt-10 md:mt-28 relative">
+                    <div class="mt-10 md:mt-20 xl:mt-28 relative px-0 md:px-20 lg:px-0">
                         <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 -top-5 md:top-auto bottom-auto md:bottom-0"></div>
-                        <p class="text-center text-sahara-500 text-2xl md:text-3xl relative">営業</p>
-                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-9 py-3 md:py-6">
-                            <p class="text-lg text-center">日本全国のお客様先を訪問し、<br class="block md:hidden"/>サービスをご案内。</p>
+                        <p class="text-center text-sahara-500 text-2xl xl:text-3xl relative">営業</p>
+                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-4 xl:px-9 py-3 xl:py-6">
+                            <p class="text-lg text-center">日本全国のお客様先を訪問し、<br class="block xl:hidden"/>サービスをご案内。</p>
                             <div class="flex flex-col md:flex-row justify-between pt-2 md:pt-5">
                                 <div class="w-full md:w-3/5 text-xs text-[#959595] space-y-1 md:space-y-3">
                                     <div class="flex gap-2">
@@ -362,11 +372,11 @@
                             <img src="./src/images/works1.svg" alt="" class="w-24 absolute -right-2 md:-right-7 -bottom-5 md:-bottom-9">
                         </div>
                     </div>
-                    <div class="mt-10 md:mt-28 relative">
+                    <div class="mt-10 md:mt-20 xl:mt-28 relative px-0 md:px-20 lg:px-0">
                         <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 -top-5 md:top-auto bottom-auto md:bottom-0"></div>
-                        <p class="text-center text-sahara-500 text-2xl md:text-3xl relative">検査員</p>
-                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-9 py-3 md:py-6">
-                            <p class="text-lg text-center">白衣を着て顕微鏡や検査機器を<br class="block md:hidden"/>使い、検体検査を担当。</p>
+                        <p class="text-center text-sahara-500 text-2xl xl:text-3xl relative">検査員</p>
+                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-4 xl:px-9 py-3 xl:py-6">
+                            <p class="text-lg text-center">白衣を着て顕微鏡や検査機器を<br class="block xl:hidden"/>使い、検体検査を担当。</p>
                             <div class="flex flex-col md:flex-row justify-between pt-2 md:pt-5">
                                 <div class="w-full md:w-3/5 text-xs text-[#959595] space-y-1 md:space-y-3">
                                     <div class="flex gap-2">
@@ -394,14 +404,14 @@
                                     <p class="text-xs leading-normal md:leading-loose pt-3">集中力や好奇心がある<br/>実験が好きだった</p>
                                 </div>
                             </div>
-                            <img src="./src/images/works2.svg" alt="" class="w-20 absolute -right-4 md:-right-6 -bottom-9 md:-bottom-11">
+                            <img src="./src/images/works2.svg" alt="" class="w-20 absolute -right-4 md:-right-6 -bottom-9 md:-bottom-14 xl:-bottom-11">
                         </div>
                     </div>
-                    <div class="mt-10 md:pt-28 relative">
+                    <div class="mt-10 md:mt-20 xl:mt-28 relative px-0 md:px-20 lg:px-0">
                         <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 -top-5 md:top-auto bottom-auto md:bottom-0"></div>
-                        <p class="text-center text-sahara-500 text-2xl md:text-3xl relative">衛生点検員</p>
-                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-9 py-3 md:py-6">
-                            <p class="text-lg text-center">飲食店などのお客様先で衛生に<br class="block md:hidden"/>関する検査・指導を実施。</p>
+                        <p class="text-center text-sahara-500 text-2xl xl:text-3xl relative">衛生点検員</p>
+                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-4 xl:px-9 py-3 xl:py-6">
+                            <p class="text-lg text-center">飲食店などのお客様先で衛生に<br class="block xl:hidden"/>関する検査・指導を実施。</p>
                             <div class="flex flex-col md:flex-row justify-between pt-2 md:pt-5">
                                 <div class="w-full md:w-3/5 text-xs text-[#959595] space-y-1 md:space-y-3">
                                     <div class="flex gap-2">
@@ -432,11 +442,11 @@
                             <img src="./src/images/works3.svg" alt="" class="w-20 absolute -right-3 md:-right-9 -bottom-3 md:-bottom-5">
                         </div>
                     </div>
-                    <div class="mt-10 md:pt-28 relative">
+                    <div class="mt-10 md:mt-20 xl:mt-28 relative px-0 md:px-20 lg:px-0">
                         <div class="w-80 h-80 bg-white rounded-full absolute left-1/2 -translate-x-1/2 -top-5 md:top-auto bottom-auto md:bottom-0"></div>
-                        <p class="text-center text-sahara-500 text-2xl md:text-3xl relative pt-2 md:pt-0">社内管理・事務</p>
-                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-9 py-3 md:py-6">
-                            <p class="text-lg text-center">経理・人事などの管理業務、<br class="block md:hidden"/>検査員の事務サポートを担当。</p>
+                        <p class="text-center text-sahara-500 text-2xl xl:text-3xl relative pt-2 md:pt-0">社内管理・事務</p>
+                        <div class="relative w-full h-auto md:h-60 rounded-lg bg-white px-4 xl:px-9 py-3 xl:py-6">
+                            <p class="text-lg text-center">経理・人事などの管理業務、<br class="block xl:hidden"/>検査員の事務サポートを担当。</p>
                             <div class="flex flex-col md:flex-row justify-between pt-2 md:pt-5">
                                 <div class="w-full md:w-3/5 text-xs text-[#959595] space-y-1 md:space-y-3">
                                     <div class="flex gap-2">
@@ -469,7 +479,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-[#FFFADB] py-7 md:py-12 px-4 md:px-12 text-sm leading-loose">
+            <div class="bg-[#FFFADB] py-7 md:py-12 px-4 xl:px-12 text-sm leading-loose">
                 <p class="w-max text-sahara-500 text-xs md:text-base border-2 rounded-full px-3 py-1 border-sahara-500 bg-[#FFF1A3]">各職種の現場から</p>
                 <p class="pt-3 md:pt-6 text-xl md:text-3xl">社員の声</p>
                 <div class="pt-4 md:pt-9 space-y-8">
@@ -488,7 +498,7 @@
                             <svg class="absolute rotate-90 md:rotate-0 -top-6 md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-4 z-30 w-6 h-10" width="25" height="40" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 50L12 58.4678L12 41.5312Z" fill="#B9A429"/>
                             </svg>
-                            <svg class="absolute rotate-90 md:rotate-0 -top-[22px] md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-[14px] z-50 w-6 h-10" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="absolute rotate-90 md:rotate-0 -top-[22px] md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-[14px] z-40 w-6 h-10" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 50L12 58.4678L12 41.5312Z" fill="#FFFADB"/>
                             </svg>
                         </div>
@@ -509,7 +519,7 @@
                             <svg class="absolute rotate-90 md:rotate-0 -top-6 md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-4 z-30 w-6 h-10" width="25" height="40" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 50L12 58.4678L12 41.5312Z" fill="#B9A429"/>
                             </svg>
-                            <svg class="absolute rotate-90 md:rotate-0 -top-[22px] md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-[14px] z-50 w-6 h-10" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="absolute rotate-90 md:rotate-0 -top-[22px] md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-[14px] z-40 w-6 h-10" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 50L12 58.4678L12 41.5312Z" fill="#FFFADB"/>
                             </svg>
                         </div>
@@ -532,7 +542,7 @@
                             <svg class="absolute rotate-90 md:rotate-0 -top-6 md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-4 z-30 w-6 h-10" width="25" height="40" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 50L12 58.4678L12 41.5312Z" fill="#B9A429"/>
                             </svg>
-                            <svg class="absolute rotate-90 md:rotate-0 -top-[22px] md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-[14px] z-50 w-6 h-10" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="absolute rotate-90 md:rotate-0 -top-[22px] md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-[14px] z-40 w-6 h-10" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 50L12 58.4678L12 41.5312Z" fill="#FFFADB"/>
                             </svg>
                         </div>
@@ -554,14 +564,14 @@
                             <svg class="absolute rotate-90 md:rotate-0 -top-6 md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-4 z-30 w-6 h-10" width="25" height="40" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 50L12 58.4678L12 41.5312Z" fill="#B9A429"/>
                             </svg>
-                            <svg class="absolute rotate-90 md:rotate-0 -top-[22px] md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-[14px] z-50 w-6 h-10" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="absolute rotate-90 md:rotate-0 -top-[22px] md:top-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-left-[14px] z-40 w-6 h-10" viewBox="-2 38 17 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 50L12 58.4678L12 41.5312Z" fill="#FFFADB"/>
                             </svg>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="pt-7 md:pt-14 pb-8 px-4 md:px-12 text-sm leading-loose">
+            <div class="pt-7 md:pt-14 pb-8 px-4 xl:px-12 text-sm leading-loose">
                 <p class="w-max text-sahara-500 text-xs md:text-base border-2 rounded-full px-3 py-1 border-sahara-500 bg-[#FFF1A3]">大事にしていること</p>
                 <p class="pt-3 md:pt-6 text-xl md:text-3xl">楽な職場ではない。<br/>でも成長できる場所です。</p>
                 <div class="pt-6 space-y-6">
@@ -569,9 +579,9 @@
                     <p>「楽な職場」に、自ら動く主体性は生まれません。<br/>「楽な職場」に、自らを高める成長はありません。<br/>「楽な職場」に、挑戦を楽しむ風土はありません。<br/>「楽な職場」に、共に頑張る仲間は存在しません。</p>
                     <p>「楽な職場」より一緒に「成長を楽しめる場所」で挑戦していきませんか？</p>
                 </div>
-                <div class="bg-sahara-500 rounded-2xl w-full px-2 md:px-5 py-4 mt-8">
+                <div class="bg-sahara-500 rounded-2xl w-full px-2 xl:px-5 py-4 mt-8">
                     <p class="text-sahara-500 bg-white px-1 w-max">私たちの目指す職場</p>
-                    <div class="grid grid-cols-2 mt-5 mx-0 md:mx-8 relative gap-6">
+                    <div class="grid grid-cols-2 mt-5 mx-0 xl:mx-8 relative gap-6">
                         <div class="text-white text-center space-y-2 md:space-y-3">
                             <p class="text-2xl md:text-3xl">主体性</p>
                             <p class="text-xs leading-normal md:leading-loose">正解がない時代に、<br/>“自分で考える力”を武器にしよう！</p>
@@ -594,7 +604,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pt-7 md:pt-14 flex flex-col md:flex-row justify-between">
+                <div class="pt-7 md:pt-14 flex flex-col md:flex-row lg:flex-col xl:flex-row justify-between">
                     <div>
                         <p class="text-sahara-500 bg-white px-1 w-max">求める人物像</p>
                         <div class="space-y-3 md:space-y-5 pt-6">
@@ -624,13 +634,13 @@
                             </div>
                         </div>
                     </div>
-                    <img src="./src/images/portrait.svg" alt="" class="w-52 md:w-60 mx-auto md:mx-0 pt-5 md:pt-0">
+                    <img src="./src/images/portrait.svg" alt="" class="w-52 xl:w-60 mx-auto md:mx-0 lg:mx-auto xl:mx-0 pt-5 md:pt-0">
                 </div>
             </div>
             <div>
-                <img src="./src/images/bg-message.webp" alt="" class="relative w-full h-24 md:h-44 z-40">
-                <p class="text-3xl -mt-9 md:-mt-14 relative z-50 px-4 md:px-12">代表メッセージ</p>
-                <div class="bg-[#F6F5C9] px-4 md:px-12 pb-10 relative z-30">
+                <img src="./src/images/bg-message.webp" alt="" class="relative w-full h-24 md:h-32 lg:h-36 xl:h-44 z-30">
+                <p class="text-3xl -mt-9 md:-mt-14 relative z-40 px-4 xl:px-12">代表メッセージ</p>
+                <div class="bg-[#F6F5C9] px-4 xl:px-12 pb-10 relative z-20">
                     <p class="pt-6 text-sm leading-loose">
                         「自分の未来は、自分でつくる」<br class="block md:hidden"/>その想いで会社を立ち上げました。<br/>
                         最初は一人、小さな部屋からのスタートでした。<br/>
@@ -645,26 +655,26 @@
                         <p class="text-xs text-[#959595]">株式会社みらい 代表取締役</p>
                         <p class="text-sm">萩原 直樹</p>
                     </div>
-                    <img src="./src/images/message.svg" alt="" class="w-20 md:w-28 absolute right-5 md:right-12 bottom-0 md:bottom-9">
+                    <img src="./src/images/message.svg" alt="" class="w-20 md:w-28 lg:w-20 xl:w-28 absolute right-5 md:right-12 lg:right-5 xl:right-12 bottom-0 md:bottom-9 lg:bottom-0 xl:bottom-9">
                 </div>
             </div>
-            <div class="bg-[#FFFADB] px-4 md:px-12 py-7 md:py-11 text-sm leading-loose">
+            <div class="bg-[#FFFADB] px-4 xl:px-12 py-7 md:py-11 text-sm leading-loose">
                 <p class="text-3xl">募集要項</p>
                 <p class="pt-4">現在、以下職種のみ募集中。<br class="block md:hidden"/>他の職種は募集時に給料要設定</p>
                 <p class="text-base text-sahara-500 bg-white px-1 w-max mt-5">総合職（衛生点検員・営業）</p>
                 <div class="pt-4 md:pt-9">
                     <div class="flex flex-col md:flex-row">
-                        <p class="text-sahara-500 w-28">雇用形態</p>
+                        <p class="text-sahara-500 w-28 shrink-0">雇用形態</p>
                         <p class="zen font-medium">正社員</p>
                     </div>
                     <hr class="border-[#D4D4D4] my-4">
                     <div class="flex flex-col md:flex-row">
-                        <p class="text-sahara-500 w-28">勤務時間</p>
+                        <p class="text-sahara-500 w-28 shrink-0">勤務時間</p>
                         <p class="zen font-medium">9:00～18:00<br/>実働：8時間<br/>休憩：60分<br/>時間外労働有無：有<br/>常時出社（日によっては直行直帰可能！）</p>
                     </div>
                     <hr class="border-[#D4D4D4] my-4">
                     <div class="flex flex-col md:flex-row">
-                        <p class="text-sahara-500 w-28">勤務地</p>
+                        <p class="text-sahara-500 w-28 shrink-0">勤務地</p>
                         <p class="zen font-medium">
                             【本社／関東ラボ】<br/>
                             埼玉県所沢市緑町2丁目7-13 ミヤオカビル4階<br/>
@@ -685,7 +695,7 @@
                     </div>
                     <hr class="border-[#D4D4D4] my-4">
                     <div class="flex flex-col md:flex-row">
-                        <p class="text-sahara-500 w-28">給与</p>
+                        <p class="text-sahara-500 w-28 shrink-0">給与</p>
                         <p class="zen font-medium">
                             月給 25万円～40万円<br/>
                             <span class="text-xs">
@@ -699,17 +709,17 @@
                     </div>
                     <hr class="border-[#D4D4D4] my-4">
                     <div class="flex flex-col md:flex-row">
-                        <p class="text-sahara-500 w-28">昇給・賞与</p>
+                        <p class="text-sahara-500 w-28 shrink-0">昇給・賞与</p>
                         <p class="zen font-medium">昇給：あり（年2回）<span class="text-xs">※業績による</span></p>
                     </div>
                     <hr class="border-[#D4D4D4] my-4">
                     <div class="flex flex-col md:flex-row">
-                        <p class="text-sahara-500 w-28">諸手当</p>
+                        <p class="text-sahara-500 w-28 shrink-0">諸手当</p>
                         <p class="zen font-medium">残業手当<br/>通勤手当：全額支給<br/>出張手当</p>
                     </div>
                     <hr class="border-[#D4D4D4] my-4">
                     <div class="flex flex-col md:flex-row">
-                        <p class="text-sahara-500 w-28">休日・休暇</p>
+                        <p class="text-sahara-500 w-28 shrink-0">休日・休暇</p>
                         <p class="zen font-medium">
                             年間休日120日以上 週休2日制（土日祝日）<br/>
                             <span class="text-xs">※案件によっては休日出勤あり、その場合は平日に振替可能</span><br/>
@@ -719,7 +729,7 @@
                     </div>
                     <hr class="border-[#D4D4D4] my-4">
                     <div class="flex flex-col md:flex-row">
-                        <p class="text-sahara-500 w-28">福利厚生</p>
+                        <p class="text-sahara-500 w-28 shrink-0">福利厚生</p>
                         <p class="zen font-medium">
                             福利厚生社会保険完備<br/>
                             受動喫煙対策：屋内禁煙<br/>
@@ -730,7 +740,7 @@
                 </div>
             </div>
             <div class="pt-7 md:pt-11">
-                <div class="px-4 md:px-12">
+                <div class="px-4 xl:px-12">
                     <div class="flex items-center gap-4">
                         <p class="text-3xl shrink-0">最後に</p>
                         <hr class="w-48 border-2 border-black">
@@ -742,20 +752,8 @@
                         ぜひ気軽にご連絡ください。
                     </p>
                 </div>
-                <p class="text-xs text-[#959595] text-end px-5 pb-2">&copy;2025 Mirai Inc.</p>
+                <p class="text-xs text-[#959595] text-end px-5 pb-32 lg:pb-2">&copy;2025 Mirai Inc.</p>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
 </body>
