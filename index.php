@@ -18,15 +18,15 @@
 </head>
 <body class="relative h-screen">
     <!-- 帯 -->
-    <div class="hidden lg:block absolute bottom-32 xl:bottom-0 w-full z-50">
+    <div class="hidden lg:block absolute bottom-0 w-full z-50">
         <div class="relative">
             <div class="opacity-70 bg-gradient-to-r from-[#FFFAE69E] to-transparent"><img src="./src/images/band.webp" alt="" class="w-full h-40 xl:h-auto"></div>
             <p class="absolute -top-16 left-6 w-44 h-44 flex justify-center items-center rounded-full bg-white text-center text-[#B39B10] text-xl md:text-2xl">衛生検査の<br/>プロ集団</p>
-            <p class="absolute top-14 left-1/3 text-end">
+            <p class="absolute top-14 left-1/4 xl:left-1/3 text-end">
                 だれかの「困った」に<br/>
                 真っ先に手を差し伸べる
             </p>
-            <div class="absolute right-[40%] top-8 flex gap-4">
+            <div class="absolute right-1/3 xl:right-[40%] top-8 flex gap-4">
                 <svg class="w-auto h-20" width="10" height="88" viewBox="0 0 10 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 0V85.5" stroke="black" stroke-width="2"/>
                     <path d="M1 82.5L5 86.5L9 82.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -118,11 +118,13 @@
         </div>
         <!-- 右側 -->
         <div class="relative bg w-full overflow-y-auto pl-0 lg:pl-8 overflow-hidden">
-            <div class="px-4 xl:px-12 pt-10">
-                <p class="text-xs leading-loose max-w-[450px]">株式会社みらいは「見えないモノを見えるようにする」ことと「楽しかった思い出を楽しかったで終わらせる」を食品衛生を通じて世の中に提供している会社です。私達の商品は、私達そのものです。考え方、真面目さ、信頼度、困っているお客様がいたら出来るだけ力になりたいと思う気持ち、仲間が困っていたらもちろん助けるよねとか、みらいらしさというものを大事にしています。</p>
-            </div>
-            <div class="flex items-end pt-12 md:mb-20">
-                <img src="./src/images/persons2.svg" alt="" class="w-11/12 mx-auto h-auto">
+            <div class="h-auto lg:h-screen">
+                <div class="px-4 xl:px-12 pt-10">
+                    <p class="text-xs leading-loose max-w-[450px]">株式会社みらいは「見えないモノを見えるようにする」ことと「楽しかった思い出を楽しかったで終わらせる」を食品衛生を通じて世の中に提供している会社です。私達の商品は、私達そのものです。考え方、真面目さ、信頼度、困っているお客様がいたら出来るだけ力になりたいと思う気持ち、仲間が困っていたらもちろん助けるよねとか、みらいらしさというものを大事にしています。</p>
+                </div>
+                <div class="flex items-end pt-12 md:mb-20">
+                    <img src="./src/images/persons2.svg" alt="" class="w-11/12 mx-auto h-auto">
+                </div>
             </div>
             <div class="pt-7 md:pt-14 px-4 xl:px-12 text-xs md:text-sm !leading-loose">
                 <p class="">
